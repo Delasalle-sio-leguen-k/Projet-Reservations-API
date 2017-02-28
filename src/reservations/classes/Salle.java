@@ -17,7 +17,7 @@ public class Salle {
 	/** Membres privés */
 	private int _id; // identifiant de l'utilisateur
 	private String _roomName; // le nom de la salle
-	private int _capacity; // la capacitÃ© de la salle
+	private int _capacity; // la capacité de la salle
 	private String _areaName; // le nom de la zone
 
 	/** Constructeurs */
@@ -67,5 +67,16 @@ public class Salle {
 	public void setAreaName(String unAreaName) {
 		this._areaName = unAreaName;
 	}	
+	
+	/** Méthodes d'instance publiques */
+	
+	public String toString() {
+		String msg = "";
+		msg += "id :\t\t" + this._id + "\n";
+		msg += "room_name :\t" + this._roomName + "\n";
+		msg += "capacity :\t\t" + this._capacity + "\n";
+		msg += "area name :\t" + this._areaName + "\n";
+		return msg;
+	}
 
 }
