@@ -17,7 +17,7 @@ public class PasserelleTest {
 	public void testConsulterSalles() {
 		Utilisateur unUtilisateur = new Utilisateur(0, 0, "giboired", "passeeeeeeeeeee", "");
 		String msg = Passerelle.consulterSalles("jim", "adminnnnnnnn");
-		assertEquals("Test Passerelle.consulterSalles", "Erreur : donnÃ©es incomplÃ¨tes.", msg);
+		assertEquals("Test Passerelle.consulterSalles", "Erreur : données incomplètes.", msg);
 		
 		msg = Passerelle.consulterSalles("giboired", "passeeeeeeeeeee");
 		assertEquals("Test Passerelle.consulterSalles", "3", msg);	
